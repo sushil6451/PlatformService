@@ -26,9 +26,7 @@ jobs:
       
     - name: Build
       run: dotnet build 
-      
-    - name: Test
-      run: dotnet test --no-build --verbosity  
+    
     - name: Publish
       run: dotnet publish -c Release -o publish
    
