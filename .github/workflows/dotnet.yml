@@ -30,6 +30,13 @@ jobs:
     - name: Publish
       run: dotnet publish -c Release -o publish
 
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+       name: my-artifact
+       path: path/to/artifact
+    
+
     - name: Download a Build Artifact
       uses: actions/download-artifact@v4.1.1
    
